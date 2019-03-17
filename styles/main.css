@@ -1,1 +1,301 @@
-/*styles*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FFF;
+	color: #B2B2B2;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.mtb-61 {
+	margin: 61px 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 35px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	padding: 61px 0;
+	transition: 0.5s;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	align-self: center; 
+}
+
+.menu-item {
+	display: inline-block;
+	margin-left: 41px;
+}
+
+.menu-link {
+	text-decoration: none;
+	color: #202020;
+}
+
+.btn {
+	background: #00C8FF;
+	border-radius: 5px;
+	color: #FFFFFF;
+	padding: 1px 14px;
+	transition: opacity 0.2s ease 0s;
+}
+
+.btn:hover {
+	opacity: 0.65;
+	transition: opacity 0.3s ease 0s;
+}
+
+.hover-menu{
+	position: relative;
+	transition: color 0.2s ease 0s;
+}
+
+.hover-menu:hover {
+	color: #00C8FF;
+	transition: color 0.2s ease 0.1s;
+}
+
+.hover-menu:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #00C8FF;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	margin: 0 auto; 
+	visibility: hidden;
+	transition: 0.05s ease;
+}
+
+.hover-menu:hover:after {
+	transition: bottom 0.3s ease;
+	bottom: 0; 
+	visibility: visible;
+}
+
+.main-block h1 {
+	font-size: 58px;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.color-black {
+	color: #202020;
+}
+
+.main-block {
+	padding: 200px 0 96px 0; 
+}
+
+.main-block p {
+	font-size: 32px;
+	line-height: 57px;
+	margin-top: 70px;
+	color: #4F4F4F;
+}
+
+.main-block a {
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 92px;
+}
+
+.btn-big {
+	padding: 13px 51px;
+	font-size: 28px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px 
+	rgba(0, 0, 0, 0.25);
+	transition: 0.2s ease;
+}
+
+.btn-big:hover {
+	transform: translateY(-3px);
+	transition: 0.3s ease;
+}
+
+.services {
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 37px 0;
+}
+
+.services-item {
+	display: flex;
+	flex: 1 0 44%;
+    margin: 69px 35px 0 35px;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.services-item:hover {
+	box-shadow: 0 1px 6px rgba(57, 73, 76, 0.25);
+	transition: 0.4s;
+}
+
+.services-img {
+	min-width: 80px;
+	text-align: center;
+	margin-right: 67px;
+}
+
+.services-title {
+	font-size: 28px;
+	color: #000000;
+	margin-bottom: 14px;
+}
+
+.services-description {
+	max-width: 300px;
+	color: #B2B2B2;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background: #C2C2C2;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: normal;
+	display: inline-block;
+	background: #FFF;
+	text-transform: uppercase;
+	padding: 0 21px;
+	transform: translateY(-14px);
+}
+
+.our-clients {
+	margin-top: 40px;
+}
+
+.clients {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clients-logo {
+	display: flex;
+    flex: 1 0 25%;
+    margin-top: 63px;
+    justify-content: center;
+}
+
+.clients-logo img {
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.clients-logo img:hover {
+  opacity: 1;
+}
+
+.our-team {
+	margin-top: 107px;
+}
+
+.team {
+	display: flex;
+  	flex-wrap: wrap;
+  	padding-bottom: 100px;
+}
+
+.team-item {
+	display: flex;
+	flex: 1 0 33%;
+	margin-top: 96px;
+}
+
+.team-title {
+	font-size: 28px;
+	color: #202020;
+	margin: 0 0 8px 35px;
+}
+
+.team-description {
+	max-width: 107px;
+	margin-left: 35px;
+	font-size: 14px;
+}
+
+footer {
+	background: #F7F7F7;
+	padding: 30px 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-media li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.footer-media {
+	align-self: center;
+	transition: 0.2s;
+}
+
+.footer-media li:hover {
+	opacity: 0.6;
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+.burger {
+	display: none;
+	align-self: center;
+}
+
+.burger img {
+	cursor: pointer;
+}
+
+.sticky {
+	box-shadow: 0 1px 6px rgba(57, 73, 76, .25);
+	opacity: 0.96;
+	transition: 0.4s;
+	padding: 14px 0;
+	z-index: 999;
+}
+
+.bx-shadow {
+	box-shadow: 0 1px 6px rgba(57, 73, 76, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
